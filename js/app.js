@@ -33,7 +33,7 @@ function showList() {
     var par = document.querySelector("#output");
     par.innerHTML = "";
 
-    var savedProfiles = JSON.parse(localStorage.getItem("lach0192"));
+    var savedProfiles = JSON.parse(localStorage.getItem("shah0150"));
 
     if (savedProfiles == null || savedProfiles == "") {
 
@@ -63,7 +63,7 @@ function showList() {
                 findAndRemove(savedProfiles, 'first', person.first, 'last', person.last);
                 findAndRemove(savedProfileList, 'first', person.first, 'last', person.last);
 
-                localStorage.setItem("lach0192", JSON.stringify(savedProfiles));
+                localStorage.setItem("shah0150", JSON.stringify(savedProfiles));
 
                 showList();
             });
@@ -126,7 +126,7 @@ function letSwipe() {
 
             savedProfileList.push(profiles[0]);
 
-            localStorage.setItem("lach0192", JSON.stringify(savedProfileList));
+            localStorage.setItem("shah0150", JSON.stringify(savedProfileList));
 
             profiles.shift();
 
